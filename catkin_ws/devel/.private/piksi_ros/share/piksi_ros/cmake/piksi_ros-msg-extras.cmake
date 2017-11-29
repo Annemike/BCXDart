@@ -1,2 +1,0 @@
-set(piksi_ros_MESSAGE_FILES "/home/christian/DARTFSD/catkin_ws/src/piksi_ros/msg/CarrierPhase.msg;/home/christian/DARTFSD/catkin_ws/src/piksi_ros/msg/Ephemeris.msg;/home/christian/DARTFSD/catkin_ws/src/piksi_ros/msg/Obs.msg;/home/christian/DARTFSD/catkin_ws/src/piksi_ros/msg/Observations.msg;/home/christian/DARTFSD/catkin_ws/src/piksi_ros/msg/Sid.msg;/home/christian/DARTFSD/catkin_ws/src/piksi_ros/msg/SignalStatus.msg")
-set(piksi_ros_SERVICE_FILES "")

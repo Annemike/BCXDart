@@ -2,18 +2,18 @@
 [  0%] Built target _piksi_ros_generate_messages_check_deps_Ephemeris
 [  0%] Built target _piksi_ros_generate_messages_check_deps_Obs
 [  0%] Built target _piksi_ros_generate_messages_check_deps_SignalStatus
-[  0%] Built target _piksi_ros_generate_messages_check_deps_CarrierPhase
 [  0%] Built target _piksi_ros_generate_messages_check_deps_Sid
-[  0%] Built target _piksi_ros_generate_messages_check_deps_Observations
+[  0%] Built target _piksi_ros_generate_messages_check_deps_CarrierPhase
 [  0%] Built target std_msgs_generate_messages_cpp
 [  0%] Built target std_msgs_generate_messages_lisp
 [  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _piksi_ros_generate_messages_check_deps_Observations
 [  0%] Built target std_msgs_generate_messages_py
 [  3%] [34m[1mGenerating dynamic reconfigure files from cfg/PiksiDriverConfig.cfg: /home/christian/DARTFSD/catkin_ws/devel/.private/piksi_ros/include/piksi_ros/PiksiDriverConfigConfig.h /home/christian/DARTFSD/catkin_ws/devel/.private/piksi_ros/lib/python2.7/dist-packages/piksi_ros/cfg/PiksiDriverConfigConfig.py[0m
 [ 21%] Built target piksi_ros_generate_messages_lisp
 [ 39%] Built target piksi_ros_generate_messages_nodejs
 [ 57%] Built target piksi_ros_generate_messages_cpp
-[ 78%] Built target piksi_ros_generate_messages_eus
+[ 90%] Built target piksi_ros_generate_messages_eus
 [100%] Built target piksi_ros_generate_messages_py
 [100%] Built target piksi_ros_generate_messages
 Generating reconfiguration files for PiksiDriver in piksi_ros
