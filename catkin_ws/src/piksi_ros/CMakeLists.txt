@@ -31,7 +31,7 @@ generate_messages(
    DEPENDENCIES
    std_msgs
 )
-yxckvlbönmäölö.
+
 
 ## Generate dynamic reconfigure parameters in the 'cfg' folder
 # generate_dynamic_reconfigure_options(
