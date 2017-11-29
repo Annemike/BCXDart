@@ -1,0 +1,13 @@
+<launch>
+<node pkg="piksi_ros" type="piksi_driver.py" name="piksi_rover" output="screen">
+<param name="host" value="192.168.0.223"/>
+<param name="port" value="55556"/>
+<param name="publish_rtk_child_tf" value="True"/>
+</node>
+<node pkg="piksi_ros" type="piksi_driver.py" name="piksi_base" output="screen">
+<param name="host" value="192.168.0.100"/>
+<param name="port" value="55556"/>
+<param name="publish_rtk_child_tf" value="True"/>
+</node>
+</launch>
+

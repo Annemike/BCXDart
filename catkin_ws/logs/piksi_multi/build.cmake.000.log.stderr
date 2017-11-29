@@ -1,0 +1,13 @@
+[31m[1mCMake Error[0m at /home/christian/DARTFSD/catkin_ws/build/piksi_multi/cmake/piksi_multi-genmsg.cmake:3 (message):
+  Could not find messages which
+  '/home/christian/DARTFSD/catkin_ws/src/piksi_multi/msg/Ephemeris.msg'
+  depends on.  Did you forget to specify generate_messages(DEPENDENCIES ...)?
+
+  Cannot locate message [Sid]: unknown package [piksi_ros] on search path
+  [{{'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'],
+  'piksi_multi': ['/home/christian/DARTFSD/catkin_ws/src/piksi_multi/msg']}}]
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/kinetic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:30 (generate_messages)
+
+

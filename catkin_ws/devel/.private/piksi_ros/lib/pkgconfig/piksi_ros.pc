@@ -1,0 +1,8 @@
+prefix=/home/christian/DARTFSD/catkin_ws/devel/.private/piksi_ros
+
+Name: piksi_ros
+Description: Description of piksi_ros
+Version: 0.0.0
+Cflags: -I/home/christian/DARTFSD/catkin_ws/devel/.private/piksi_ros/include
+Libs: -L/home/christian/DARTFSD/catkin_ws/devel/.private/piksi_ros/lib 
+Requires: diagnostic_updater nav_msgs rospy sensor_msgs std_msgs

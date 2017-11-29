@@ -1,0 +1,51 @@
+\subsubsection usage Usage
+\verbatim
+<node name="piksi_driver" pkg="piksi_ros" type="piksi_driver">
+  <param name="piksi__surveyed_position__broadcast" type="bool" value="False" />
+  <param name="piksi__surveyed_position__surveyed_lat" type="double" value="0.0" />
+  <param name="piksi__surveyed_position__surveyed_lon" type="double" value="0.0" />
+  <param name="piksi__surveyed_position__surveyed_alt" type="double" value="0.0" />
+  <param name="piksi__frontend__antenna_selection" type="int" value="0" />
+  <param name="piksi__sbp__obs_msg_max_size" type="int" value="102" />
+  <param name="piksi__simulator__enabled" type="bool" value="False" />
+  <param name="piksi__simulator__base_ecef_x" type="double" value="0.0" />
+  <param name="piksi__simulator__base_ecef_y" type="double" value="0.0" />
+  <param name="piksi__simulator__base_ecef_z" type="double" value="0.0" />
+  <param name="piksi__simulator__speed" type="double" value="4.0" />
+  <param name="piksi__simulator__radius" type="double" value="100.0" />
+  <param name="piksi__simulator__pos_sigma" type="double" value="2.0" />
+  <param name="piksi__simulator__speed_sigma" type="double" value="0.02" />
+  <param name="piksi__simulator__cn0_sigma" type="double" value="0.1" />
+  <param name="piksi__simulator__pseudorange_sigma" type="double" value="16.0" />
+  <param name="piksi__simulator__phase_sigma" type="double" value="0.0009" />
+  <param name="piksi__simulator__num_sats" type="int" value="9" />
+  <param name="piksi__solution__soln_freq" type="int" value="10" />
+  <param name="piksi__solution__output_every_n_obs" type="int" value="2" />
+  <param name="piksi__solution__dgnss_solution_mode" type="int" value="0" />
+  <param name="piksi__solution__known_baseline_n" type="double" value="0.0" />
+  <param name="piksi__solution__known_baseline_e" type="double" value="0.0" />
+  <param name="piksi__solution__known_baseline_d" type="double" value="0.0" />
+  <param name="piksi__solution__elevation_mask" type="double" value="5.0" />
+  <param name="piksi__system_monitor__heartbeat_period_milliseconds" type="int" value="0" />
+  <param name="piksi__system_monitor__watchdog" type="bool" value="True" />
+  <param name="piksi__telemetry_radio__configuration_string" type="str" value="" />
+  <param name="piksi__uart_ftdi__mode" type="int" value="0" />
+  <param name="piksi__uart_ftdi__sbp_message_mask" type="int" value="65535" />
+  <param name="piksi__uart_ftdi__baudrate" type="int" value="1000000" />
+  <param name="piksi__uart_uarta__mode" type="int" value="0" />
+  <param name="piksi__uart_uarta__sbp_message_mask" type="int" value="64" />
+  <param name="piksi__uart_uarta__configure_telemetry_radio_on_boot" type="bool" value="True" />
+  <param name="piksi__uart_uarta__baudrate" type="int" value="57600" />
+  <param name="piksi__uart_uartb__mode" type="int" value="0" />
+  <param name="piksi__uart_uartb__sbp_message_mask" type="int" value="65280" />
+  <param name="piksi__uart_uartb__configure_telemetry_radio_on_boot" type="bool" value="True" />
+  <param name="piksi__uart_uartb__baudrate" type="int" value="115200" />
+  <param name="piksi__ext_events__edge_trigger" type="int" value="0" />
+  <param name="piksi__nmea__gpgsv_msg_rate" type="int" value="10" />
+  <param name="piksi__nmea__gprmc_msg_rate" type="int" value="10" />
+  <param name="piksi__nmea__gpvtg_msg_rate" type="int" value="10" />
+  <param name="piksi__nmea__gpgll_msg_rate" type="int" value="10" />
+  <param name="piksi__pps__width" type="int" value="200000" />
+</node>
+\endverbatim
+
