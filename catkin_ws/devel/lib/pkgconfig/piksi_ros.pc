@@ -1,1 +1,0 @@
-/home/christian/DARTFSD/catkin_ws/devel/.private/piksi_ros/lib/pkgconfig/piksi_ros.pc

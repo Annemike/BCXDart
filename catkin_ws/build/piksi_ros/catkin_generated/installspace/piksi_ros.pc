@@ -1,8 +1,0 @@
-prefix=/home/christian/DARTFSD/catkin_ws/install
-
-Name: piksi_ros
-Description: Description of piksi_ros
-Version: 0.0.0
-Cflags: -I/home/christian/DARTFSD/catkin_ws/install/include
-Libs: -L/home/christian/DARTFSD/catkin_ws/install/lib 
-Requires: diagnostic_updater nav_msgs rospy sensor_msgs std_msgs
