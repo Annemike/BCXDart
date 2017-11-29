@@ -1,8 +1,16 @@
 # DARTFSD
+### Status
 
-Master: https://travis-ci.com/EpicMinister/DARTFSD.svg?token=UqRVv9E9juHKc34pTs2q&branch=master
+##### Master: 
+![Build Status](https://travis-ci.com/EpicMinister/DARTFSD.svg?token=UqRVv9E9juHKc34pTs2q&branch=master)
 
-Sensor Fusion: https://travis-ci.com/EpicMinister/DARTFSD.svg?token=UqRVv9E9juHKc34pTs2q&branch=sensor_fusion
+###### Sensor Fusion: 
+![Build Status](https://travis-ci.com/EpicMinister/DARTFSD.svg?token=UqRVv9E9juHKc34pTs2q&branch=sensor_fusion)
+###### Computer Vision: 
+
+###### Trajectory: 
+
+###### SLAM : 
 
 ## Clone
 
