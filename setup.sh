@@ -1,0 +1,13 @@
+#install catkin command line tools
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install python-catkin-tools
+
+#install additional packages needed
+sudo apt-get install ros-kinetic-rqt-multiplot
+
+#build all catkin packages
+cd catkin_ws/
+catkin build
+
