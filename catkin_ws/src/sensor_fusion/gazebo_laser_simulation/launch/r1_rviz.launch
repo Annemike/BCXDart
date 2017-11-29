@@ -1,0 +1,6 @@
+<launch>
+
+   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find gazebo_laser_simulation)/launch/r1_localization.rviz"/>
+  
+</launch>
+
