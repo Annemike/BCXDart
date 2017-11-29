@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/christian/DARTFSD/catkin_ws/devel/.private/piksi_ros/setup.sh
