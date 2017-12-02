@@ -6,4 +6,4 @@
 	url = https://github.com/Magnusgaertner/obstacle_detector.git
 [submodule "catkin_ws/src/sensor_fusion/armadillo"]
 	path = catkin_ws/src/sensor_fusion/armadillo
-	url = https://github.com/conradsnicta/armadillo-code.git
+	url = https://github.com/Magnusgaertner/armadillo-code.git
