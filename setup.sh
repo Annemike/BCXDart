@@ -27,4 +27,6 @@ sudo apt-get install python-catkin-tools
 #install additional packages needed
 sudo apt-get install ros-kinetic-rqt-multiplot ros-kinetic-teleop-twist-keyboard 
 
+#initialize submodules
+git submodule update --init-recursive
 
