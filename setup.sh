@@ -27,6 +27,9 @@ sudo apt-get install python-catkin-tools
 #install additional packages needed
 sudo apt-get install ros-kinetic-rqt-multiplot ros-kinetic-teleop-twist-keyboard 
 
+#install LAPACK|BLAS -> Armadillo dependencies -> obstracle_detection dependency
+sudo apt-get install libblas-dev liblapack-dev
+
 #initialize submodules
 git submodule update --init-recursive
 
