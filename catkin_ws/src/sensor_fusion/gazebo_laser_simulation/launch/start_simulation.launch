@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find gazebo_laser_simulation)/launch/r1_gazebo_gh25.launch"/>
+<include file="$(find gazebo_laser_simulation)/launch/r1_teleop.launch"/>
+<include file="$(find gazebo_laser_simulation)/launch/r1_rviz.launch"/>
+
+</launch>
