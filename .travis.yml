@@ -23,7 +23,8 @@ matrix:
 install:
   - git clone https://github.com/ros-industrial/industrial_ci.git .ci_config
   
-befor_script:
+before_script:
+  - WRITABLE_SOURCE=true
   - CATKIN_CONFIG='--isolated-devel'
 
 script:
