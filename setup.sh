@@ -31,5 +31,5 @@ sudo apt-get install ros-kinetic-rqt-multiplot ros-kinetic-teleop-twist-keyboard
 sudo apt-get install libblas-dev liblapack-dev
 
 #initialize submodules
-git submodule update --init-recursive
+git submodule update --init --recursive
 
