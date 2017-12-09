@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -73,7 +74,7 @@ find_package(catkin REQUIRED COMPONENTS
 generate_messages(
    DEPENDENCIES
    std_msgs
-geometry_msgs
+   geometry_msgs
 )
 
 ################################################
@@ -108,7 +109,7 @@ geometry_msgs
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES dart_msgs
-#  CATKIN_DEPENDS message_generation message_runtime roscpp rospy std_msgs
+#  CATKIN_DEPENDS message_generation message_runtime roscpp rospy std_msgs geometry_msgs
 #  DEPENDS system_lib
 )
 
