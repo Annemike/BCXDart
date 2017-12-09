@@ -109,7 +109,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES dart_msgs
-#  CATKIN_DEPENDS message_generation message_runtime roscpp rospy std_msgs geometry_msgs
+   CATKIN_DEPENDS message_runtime roscpp rospy std_msgs geometry_msgs
 #  DEPENDS system_lib
 )
 
