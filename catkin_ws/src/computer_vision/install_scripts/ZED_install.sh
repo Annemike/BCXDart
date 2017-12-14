@@ -10,7 +10,7 @@ sudo apt-get -y install ros-kinetic-pcl-ros
 
 #install CV 3.1
 sudo apt-get -y install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
-git clone https://github.com/Itseez/opencv.gitcuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
+git clone https://github.com/Itseez/opencv.git
 cd opencv
 git checkout tags/3.1.0
 mkdir build
@@ -25,7 +25,12 @@ cmake  -D WITH_CUDA=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D BUILD_EXAM
 make -j3
 sudo make install
 
-# install ZED_SDK for Cuda 8.0 V2.2.0
+# install ZED_SDK for Cuda 8.0 V2.2.0 for Linux x86
 wget https://cdn.stereolabs.com/developers/downloads/ZED_SDK_Linux_Ubuntu16_CUDA8_v2.2.0.run
+chmod u+x ./ZED_SDK_Linux_Ubuntu16_CUDA8_v2.2.0.run
+sh ./ZED_SDK_Linux_Ubuntu16_CUDA8_v2.2.0.run
+
+# install ZED_SDK for Cuda 8.0 V2.2.1 for Drive PX2
+wget https://cdn.stereolabs.com/developers/downloads/ZED_SDK_Linux_JTX2_v2.2.1.run
 chmod u+x ./ZED_SDK_Linux_Ubuntu16_CUDA8_v2.2.0.run
 sh ./ZED_SDK_Linux_Ubuntu16_CUDA8_v2.2.0.run
