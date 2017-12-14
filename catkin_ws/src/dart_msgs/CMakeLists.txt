@@ -54,6 +54,11 @@ find_package(catkin REQUIRED COMPONENTS
    FILES
    cv_cone.msg
    cv_cone_list.msg
+   cone.msg
+   cone_list.msg
+   lidar_cone.msg
+   lidar_cone_list.msg
+   local_map.msg
  )
 
 ## Generate services in the 'srv' folder
