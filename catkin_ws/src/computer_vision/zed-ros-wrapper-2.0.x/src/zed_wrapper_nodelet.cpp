@@ -104,6 +104,7 @@ namespace zed_wrapper {
         int zed_id;
         std::string odometry_DB;
         std::string svo_filepath;
+	bool computeDepth_param;
 
         //Tracking variables
         sl::Pose pose;
@@ -460,7 +461,7 @@ namespace zed_wrapper {
                     ros::Time t = ros::Time::now(); // Get current time
 
                     grabbing = true;
-                    if (computeDepth) {
+                    if (computeDepth && computeDepth_param) {
                         int actual_confidence = zed->getConfidenceThreshold();
                         if (actual_confidence != confidence)
                             zed->setConfidenceThreshold(confidence);
@@ -664,6 +665,8 @@ namespace zed_wrapper {
             nh_ns.getParam("odometry_topic", odometry_topic);
 
             nh_ns.param<std::string>("svo_filepath", svo_filepath, std::string());
+            nh_ns.getParam("compute_Depth", computeDepth_param);
+
 
             // Create the ZED object
             zed.reset(new sl::Camera());
