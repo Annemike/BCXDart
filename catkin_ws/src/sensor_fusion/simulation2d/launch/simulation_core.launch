@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="simulation2d" type="simulation2d_node" name="simulator" output="screen"/>
+	<param name="car_state_pub_queue_size" value="10" type="int" />
+	<param name="carLength" value="2.0" type="double"  />
+	<param name="number_of_callback_threads" value="4" type="int" />
+	<param name="update_rate_freq" value="50" type="int" /> 
+</launch>

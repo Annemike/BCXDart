@@ -1,0 +1,12 @@
+<launch>
+<node pkg="rostopic" type="rostopic" name="ground_visual" 
+args="pub /ground visualization_msgs/Marker '{header:
+  {frame_id: 'base_link'},
+type: 1,
+pose:
+  {position: {x: 0.0, y: 0.0, z: -0.05}},
+scale: {x: 500.0, y: 500.0, z: 0.1},
+color: {r: 0.24, g: 0.24, b: 0.36, a: 1.0}}'"
+ />
+</launch>
+
