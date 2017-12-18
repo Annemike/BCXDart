@@ -1,0 +1,5 @@
+<launch>
+<node pkg="tf" type="static_transform_publisher" name="lidarLink_broadcaster" args="2 0 0 0 0 0 1 /base_link /Lidar1 100" />
+
+<node pkg="tf" type="static_transform_publisher" name="lidarLink_broadcaster2" args="0 0 0 0 0 1 0 /base_link /Lidar2 100" />
+</launch>
