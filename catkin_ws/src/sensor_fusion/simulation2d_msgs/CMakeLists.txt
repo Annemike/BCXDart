@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(dart_msgs)
+project(simulation2d_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -9,11 +9,10 @@ project(dart_msgs)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   message_generation
-  message_runtime
   roscpp
-  rospy
   std_msgs
   geometry_msgs
+  tf
 )
 
 ## System dependencies are found with CMake's conventions
@@ -52,13 +51,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
  add_message_files(
    FILES
-   cv_cone.msg
-   cv_cone_list.msg
-   cone.msg
-   cone_list.msg
-   lidar_cone.msg
-   lidar_cone_list.msg
-   local_map.msg
+   car_state.msg
+   vehicle_control.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -76,11 +70,11 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
+ generate_messages(
    DEPENDENCIES
    std_msgs
    geometry_msgs
-)
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -107,14 +101,14 @@ generate_messages(
 ###################################
 ## The catkin_package macro generates cmake config files for your package
 ## Declare things to be passed to dependent projects
-## INCLUDE_DIRS: uncomment this if your package contains header files
+## INCLUDE_DIRS: uncomment this if you package contains header files
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES dart_msgs
-   CATKIN_DEPENDS message_runtime roscpp rospy std_msgs geometry_msgs
+#  LIBRARIES simulation2d_msgs
+  CATKIN_DEPENDS message_runtime roscpp std_msgs
 #  DEPENDS system_lib
 )
 
@@ -131,7 +125,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/dart_msgs.cpp
+#   src/${PROJECT_NAME}/simulation2d_msgs.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -142,7 +136,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/dart_msgs_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/simulation2d_msgs_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -199,7 +193,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_dart_msgs.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_simulation2d_msgs.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

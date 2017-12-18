@@ -1,0 +1,16 @@
+<launch>
+	<!--node pkg="rqt_gui" type="rqt_gui" name="FastSlamControl" args="-p simulation"/-->
+	
+
+	<include file="$(find simulation2d)/launch/static_tf.launch"/>
+	<include file="$(find simulation2d)/launch/simulation_core.launch"/>
+	<include file="$(find simulation2d)/launch/simulation_visualization.launch"/>
+	<include file="$(find simulation2d)/launch/world.launch"/>
+	<include file="$(find simulation2d)/launch/simulation_sensors.launch"/>
+	<include file="$(find simulation2d)/launch/ps4controller.launch"/>
+
+
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	
+</launch>

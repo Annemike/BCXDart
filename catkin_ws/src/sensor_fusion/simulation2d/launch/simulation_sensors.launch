@@ -1,0 +1,12 @@
+<launch>
+	<node pkg="simulation2d" type="simulation2d_gps_simulator" name="gps" output="screen"/>
+	<node pkg="simulation2d" type="simulation2d_compass_simulator" name="compass" output="screen"/>
+	<node pkg="simulation2d" type="simulation2d_conesensor_simulator" name="conesensor_front" output="screen">
+		<param name="name" value="Lidar1"/>
+		<param name="sensor_range" value="80"/>
+	</node>
+
+<!--node pkg="simulation2d" type="simulation2d_conesensor_simulator" name="conesensor_back" output="screen">
+		<param name="name" value="Lidar2"/>
+	</node-->
+</launch>

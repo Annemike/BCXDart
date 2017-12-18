@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="joy" type="joy_node" name="ps4controller" output="screen"/>
+	<node pkg="simulation2d" type="simulation2d_controlerBridge" name="controlerBridge" output="screen"/>
+	<param name="controler_maxSpeed" value="20" type="double"/> 
+	<param name="controler_maxSteering" value="0.3" type="double"/>
+</launch>

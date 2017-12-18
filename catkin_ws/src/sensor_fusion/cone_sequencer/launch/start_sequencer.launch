@@ -1,0 +1,3 @@
+<launch>
+<node type="cone_sequencer_node" name="cone_sequencer" pkg="cone_sequencer" output="screen"/>
+</launch>

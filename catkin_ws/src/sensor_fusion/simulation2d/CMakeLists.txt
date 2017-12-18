@@ -1,19 +1,22 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(dart_msgs)
+project(simulation2d)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+ add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  message_generation
-  message_runtime
   roscpp
-  rospy
   std_msgs
-  geometry_msgs
+  simulation2d_msgs
+  rospy
+  message_generation
+  tf
+  visualization_msgs
+  sensor_msgs
+  dart_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -50,16 +53,9 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
- add_message_files(
-   FILES
-   cv_cone.msg
-   cv_cone_list.msg
-   cone.msg
-   cone_list.msg
-   lidar_cone.msg
-   lidar_cone_list.msg
-   local_map.msg
- )
+#add_message_files(
+#   FILES
+# )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -76,11 +72,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-   DEPENDENCIES
-   std_msgs
-   geometry_msgs
-)
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs 
+# )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -107,14 +102,14 @@ generate_messages(
 ###################################
 ## The catkin_package macro generates cmake config files for your package
 ## Declare things to be passed to dependent projects
-## INCLUDE_DIRS: uncomment this if your package contains header files
+## INCLUDE_DIRS: uncomment this if you package contains header files
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES dart_msgs
-   CATKIN_DEPENDS message_runtime roscpp rospy std_msgs geometry_msgs
+#  LIBRARIES simulation2d
+  CATKIN_DEPENDS roscpp std_msgs message_runtime 
 #  DEPENDS system_lib
 )
 
@@ -131,7 +126,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/dart_msgs.cpp
+#   src/${PROJECT_NAME}/simulation2d.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -142,23 +137,60 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/dart_msgs_node.cpp)
-
+add_executable(${PROJECT_NAME}_node src/simulation2d_node.cpp)
+add_executable(${PROJECT_NAME}_node_visualization src/simulation2d_node_visualization.cpp)
+add_executable(${PROJECT_NAME}_node_world src/simulation2d_node_world.cpp)
+add_executable(${PROJECT_NAME}_controlerBridge src/simulation2d_controlerBridge.cpp)
+add_executable(${PROJECT_NAME}_gps_simulator src/simulation2d_gps_simulator.cpp)
+add_executable(${PROJECT_NAME}_compass_simulator src/simulation2d_compass_simulator.cpp)
+add_executable(${PROJECT_NAME}_conesensor_simulator src/simulation2d_conesensor_simulator.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
 ## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
-# set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
+# set_target_properties(${PROJECT_NAME}_node_visualization PROPERTIES OUTPUT_NAME simulation2dvisualization PREFIX "")
+
+# set_target_properties(${PROJECT_NAME}_node_world PROPERTIES OUTPUT_NAME simulation2dworld PREFIX "")
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_node_visualization ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_node_world ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_dependencies(${PROJECT_NAME}_controlerBridge ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_gps_simulator ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_compass_simulator ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_conesensor_simulator ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
+ target_link_libraries(${PROJECT_NAME}_node
+   ${catkin_LIBRARIES}
+ )
 
+ target_link_libraries(${PROJECT_NAME}_node_visualization
+   ${catkin_LIBRARIES}
+ )
+
+ target_link_libraries(${PROJECT_NAME}_node_world
+   ${catkin_LIBRARIES}
+ )
+
+ target_link_libraries(${PROJECT_NAME}_controlerBridge
+   ${catkin_LIBRARIES}
+ )
+
+ target_link_libraries(${PROJECT_NAME}_gps_simulator
+   ${catkin_LIBRARIES}
+ )
+
+ target_link_libraries(${PROJECT_NAME}_compass_simulator
+   ${catkin_LIBRARIES}
+ )
+
+ target_link_libraries(${PROJECT_NAME}_conesensor_simulator
+   ${catkin_LIBRARIES}
+ )
 #############
 ## Install ##
 #############
@@ -199,7 +231,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_dart_msgs.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_simulation2d.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

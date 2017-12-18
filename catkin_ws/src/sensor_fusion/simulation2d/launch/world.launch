@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="simulation2d" type="simulation2d_node_world" name="world" output="screen"/>
+	<param name="worldFile" value="$(find simulation2d)/worlds/TrackDrive.txt" type="str" />
+</launch>

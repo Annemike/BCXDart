@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="simulation2d" type="simulation2d_node_visualization" name="simulator_visual" output="screen"/>
+	<arg name="model"  default="$(find simulation2d)models/model.sdf"/>
+	<param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
+	<include file="$(find simulation2d)/launch/ground_visual.launch" />
+</launch>
