@@ -142,7 +142,7 @@ add_executable(${PROJECT_NAME}_node_visualization src/simulation2d_node_visualiz
 add_executable(${PROJECT_NAME}_node_world src/simulation2d_node_world.cpp)
 add_executable(${PROJECT_NAME}_controlerBridge src/simulation2d_controlerBridge.cpp)
 add_executable(${PROJECT_NAME}_gps_simulator src/simulation2d_gps_simulator.cpp)
-#add_executable(${PROJECT_NAME}_compass_simulator src/simulation2d_compass_simulator.cpp)
+add_executable(${PROJECT_NAME}_compass_simulator src/simulation2d_compass_simulator.cpp)
 add_executable(${PROJECT_NAME}_conesensor_simulator src/simulation2d_conesensor_simulator.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
