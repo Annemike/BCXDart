@@ -3,12 +3,14 @@ import os
 import rospy
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
-# from std_msgs.msg import String
+from std_msgs.msg import String, Float32MultiArray
 from sensor_msgs.msg import Image
 from pytorch_yolo2.obj_detect import detect
+from dart_msgs.msg import cv_cone_list, cv_cone
 
 
 bridge = CvBridge()
+pub_bbox = rospy.Publisher("NeuralNetwork_bboxs", cv_cone_list, queue_size=100)
 
 
 def callback(msg):
@@ -22,6 +24,22 @@ def callback(msg):
     cwd = os.getcwd()
     boxes = detect(cwd + '/src/computer_vision/nn_node/scripts/pytorch_yolo2/cfg/yolo.cfg', cwd + '/src/computer_vision/nn_node/scripts/pytorch_yolo2/yolo.weights', cv2_img)
 
+    (height, width, channels) = cv2_img.shape
+
+    msg_cone_list = cv_cone_list()
+    for box in boxes:
+        cone = cv_cone()
+        cone.x = box[0] * width
+        cone.y = box[1] * height
+        cone.width = box[2] * width
+        cone.height = box[3] * height
+        cone.type = box[6]
+        cone.quality = box[5]*100
+        msg_cone_list.cones.append(cone)
+
+    pub_bbox.publish(msg_cone_list)
+
+
 
 def listener():
     # In ROS, nodes are uniquely named. If two nodes with the same
@@ -32,7 +50,6 @@ def listener():
     rospy.init_node('NeuralNetwork_Subscriber', anonymous=True)
 
     rospy.Subscriber("zed/rgb/image_rect_color", Image, callback)
-    # rospy.Publisher("NeuralNetwork_caught_img", Image, queue_size=10)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
