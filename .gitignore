@@ -4,3 +4,9 @@
 /catkin_ws/.catkin_tools
 /catkin_ws/devel_isolated
 /catkin_ws/build_isolated
+
+catkin_ws/src/sensor_fusion/simulation2d/\.idea/
+
+catkin_ws/src/sensor_fusion/cone_sequencer/\.idea/
+
+catkin_ws/src/sensor_fusion/cone_sequencer/cmake-build-debug/
