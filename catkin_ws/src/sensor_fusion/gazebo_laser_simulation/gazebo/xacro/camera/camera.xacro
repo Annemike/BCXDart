@@ -59,7 +59,7 @@
           <stddev>0.007</stddev>
         </noise>
       </camera>
-      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+      <plugin name="camera_controler" filename="libgazebo_ros_camera.so">
         <robotNamespace></robotNamespace>
         <alwaysOn>true</alwaysOn>
         <updateRate>0.0</updateRate>
