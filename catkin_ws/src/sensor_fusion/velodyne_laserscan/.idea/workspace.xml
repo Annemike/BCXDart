@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="velodyne_laserscan" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="_run_tests_velodyne_laserscan_rostest_tests_system_node.test" />
+      <config projectName="velodyne_laserscan" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="dynamic_reconfigure_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="run_tests" />
+      <config projectName="velodyne_laserscan" targetName="nodelet_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="clean_test_results_velodyne_laserscan" />
+      <config projectName="velodyne_laserscan" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" />
+      <config projectName="velodyne_laserscan" targetName="gtest_main" />
+      <config projectName="velodyne_laserscan" targetName="run_tests_velodyne_laserscan_rostest" />
+      <config projectName="velodyne_laserscan" targetName="tests" />
+      <config projectName="velodyne_laserscan" targetName="test_system_nodelet" />
+      <config projectName="velodyne_laserscan" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="bond_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="nodelet_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="roscpp_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" />
+      <config projectName="velodyne_laserscan" targetName="test_lazy_subscriber_node" />
+      <config projectName="velodyne_laserscan" targetName="clean_test_results" />
+      <config projectName="velodyne_laserscan" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="download_extra_data" />
+      <config projectName="velodyne_laserscan" targetName="_run_tests_velodyne_laserscan" />
+      <config projectName="velodyne_laserscan" targetName="bond_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" />
+      <config projectName="velodyne_laserscan" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="bond_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="test_system_node" />
+      <config projectName="velodyne_laserscan" targetName="nodelet_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="velodyne_laserscan" />
+      <config projectName="velodyne_laserscan" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="test_lazy_subscriber_nodelet" />
+      <config projectName="velodyne_laserscan" targetName="bond_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="doxygen" />
+      <config projectName="velodyne_laserscan" targetName="gtest" />
+      <config projectName="velodyne_laserscan" targetName="run_tests_velodyne_laserscan_rostest_tests_system_node.test" />
+      <config projectName="velodyne_laserscan" targetName="_run_tests_velodyne_laserscan_rostest" />
+      <config projectName="velodyne_laserscan" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="_run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" />
+      <config projectName="velodyne_laserscan" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="nodelet_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="velodyne_laserscan" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="velodyne_laserscan" targetName="velodyne_laserscan_gencfg" />
+      <config projectName="velodyne_laserscan" targetName="roscpp_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="velodyne_laserscan" targetName="_run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" />
+      <config projectName="velodyne_laserscan" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="velodyne_laserscan_node" />
+      <config projectName="velodyne_laserscan" targetName="std_msgs_generate_messages_py" />
+      <config projectName="velodyne_laserscan" targetName="run_tests_velodyne_laserscan" />
+      <config projectName="velodyne_laserscan" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="velodyne_laserscan" targetName="bond_generate_messages_lisp" />
+      <config projectName="velodyne_laserscan" targetName="_run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cec8bbf2-b0d8-4230-a8f3-9449dc9ab9ec" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="VelodyneLaserScan.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/VelodyneLaserScan.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#113#503#0" expanded="false" />
+                <element signature="e#6109#6211#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="72" lean-forward="false" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>LaserSca</find>
+    </findStrings>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="velodyne_laserscan" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="velodyne_laserscan" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="velodyne_laserscan" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="velodyne_laserscan" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="velodyne_laserscan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="velodyne_laserscan" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="velodyne_laserscan" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="velodyne_laserscan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cone_detector/CMakeLists.txt" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.velodyne_laserscan_node">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="_run_tests_velodyne_laserscan" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="_run_tests_velodyne_laserscan" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="_run_tests_velodyne_laserscan_rostest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="_run_tests_velodyne_laserscan_rostest" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="_run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="_run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="_run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="_run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="_run_tests_velodyne_laserscan_rostest_tests_system_node.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="_run_tests_velodyne_laserscan_rostest_tests_system_node.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="_run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="_run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="bond_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="bond_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="bond_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="bond_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="bond_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="bond_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="clean_test_results_velodyne_laserscan" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="clean_test_results_velodyne_laserscan" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="dynamic_reconfigure_gencfg" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="dynamic_reconfigure_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="dynamic_reconfigure_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="dynamic_reconfigure_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="dynamic_reconfigure_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="dynamic_reconfigure_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="nodelet_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="nodelet_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="nodelet_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="nodelet_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nodelet_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="nodelet_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests_velodyne_laserscan" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="run_tests_velodyne_laserscan" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests_velodyne_laserscan_rostest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="run_tests_velodyne_laserscan_rostest" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests_velodyne_laserscan_rostest_tests_system_node.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="run_tests_velodyne_laserscan_rostest_tests_system_node.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="sensor_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="sensor_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="test_lazy_subscriber_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="test_lazy_subscriber_node" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="velodyne_laserscan" RUN_TARGET_NAME="test_lazy_subscriber_node">
+      <envs />
+    </configuration>
+    <configuration name="test_lazy_subscriber_nodelet" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="test_lazy_subscriber_nodelet" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="velodyne_laserscan" RUN_TARGET_NAME="test_lazy_subscriber_nodelet">
+      <envs />
+    </configuration>
+    <configuration name="test_system_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="test_system_node" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="velodyne_laserscan" RUN_TARGET_NAME="test_system_node">
+      <envs />
+    </configuration>
+    <configuration name="test_system_nodelet" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="test_system_nodelet" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="velodyne_laserscan" RUN_TARGET_NAME="test_system_nodelet">
+      <envs />
+    </configuration>
+    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="tests" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="velodyne_laserscan" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="velodyne_laserscan" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="velodyne_laserscan_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="velodyne_laserscan_gencfg" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="velodyne_laserscan_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_laserscan" TARGET_NAME="velodyne_laserscan_node" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="velodyne_laserscan" RUN_TARGET_NAME="velodyne_laserscan_node">
+      <envs />
+    </configuration>
+    <list size="69">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.bond_generate_messages_cpp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.bond_generate_messages_eus" />
+      <item index="3" class="java.lang.String" itemvalue="Application.bond_generate_messages_lisp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.bond_generate_messages_nodejs" />
+      <item index="5" class="java.lang.String" itemvalue="Application.bond_generate_messages_py" />
+      <item index="6" class="java.lang.String" itemvalue="Application.clean_test_results" />
+      <item index="7" class="java.lang.String" itemvalue="Application.download_extra_data" />
+      <item index="8" class="java.lang.String" itemvalue="Application.doxygen" />
+      <item index="9" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_gencfg" />
+      <item index="10" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_cpp" />
+      <item index="11" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_eus" />
+      <item index="12" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_lisp" />
+      <item index="13" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_nodejs" />
+      <item index="14" class="java.lang.String" itemvalue="Application.dynamic_reconfigure_generate_messages_py" />
+      <item index="15" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_cpp" />
+      <item index="16" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_eus" />
+      <item index="17" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_lisp" />
+      <item index="18" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_nodejs" />
+      <item index="19" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_py" />
+      <item index="20" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_cpp" />
+      <item index="21" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_eus" />
+      <item index="22" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_lisp" />
+      <item index="23" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_nodejs" />
+      <item index="24" class="java.lang.String" itemvalue="Application.nodelet_generate_messages_py" />
+      <item index="25" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_cpp" />
+      <item index="26" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_eus" />
+      <item index="27" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_lisp" />
+      <item index="28" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_nodejs" />
+      <item index="29" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_py" />
+      <item index="30" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_cpp" />
+      <item index="31" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_eus" />
+      <item index="32" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_lisp" />
+      <item index="33" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_nodejs" />
+      <item index="34" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_py" />
+      <item index="35" class="java.lang.String" itemvalue="Application.run_tests" />
+      <item index="36" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_cpp" />
+      <item index="37" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_eus" />
+      <item index="38" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_lisp" />
+      <item index="39" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_nodejs" />
+      <item index="40" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_py" />
+      <item index="41" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_cpp" />
+      <item index="42" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_eus" />
+      <item index="43" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_lisp" />
+      <item index="44" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_nodejs" />
+      <item index="45" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_py" />
+      <item index="46" class="java.lang.String" itemvalue="Application.tests" />
+      <item index="47" class="java.lang.String" itemvalue="Application.velodyne_laserscan" />
+      <item index="48" class="java.lang.String" itemvalue="Application.velodyne_laserscan_gencfg" />
+      <item index="49" class="java.lang.String" itemvalue="Application.velodyne_laserscan_node" />
+      <item index="50" class="java.lang.String" itemvalue="Application._run_tests_velodyne_laserscan" />
+      <item index="51" class="java.lang.String" itemvalue="Application._run_tests_velodyne_laserscan_rostest" />
+      <item index="52" class="java.lang.String" itemvalue="Application._run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" />
+      <item index="53" class="java.lang.String" itemvalue="Application._run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" />
+      <item index="54" class="java.lang.String" itemvalue="Application._run_tests_velodyne_laserscan_rostest_tests_system_node.test" />
+      <item index="55" class="java.lang.String" itemvalue="Application._run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" />
+      <item index="56" class="java.lang.String" itemvalue="Application.clean_test_results_velodyne_laserscan" />
+      <item index="57" class="java.lang.String" itemvalue="Application.run_tests_velodyne_laserscan" />
+      <item index="58" class="java.lang.String" itemvalue="Application.run_tests_velodyne_laserscan_rostest" />
+      <item index="59" class="java.lang.String" itemvalue="Application.run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_node.test" />
+      <item index="60" class="java.lang.String" itemvalue="Application.run_tests_velodyne_laserscan_rostest_tests_lazy_subscriber_nodelet.test" />
+      <item index="61" class="java.lang.String" itemvalue="Application.run_tests_velodyne_laserscan_rostest_tests_system_node.test" />
+      <item index="62" class="java.lang.String" itemvalue="Application.run_tests_velodyne_laserscan_rostest_tests_system_nodelet.test" />
+      <item index="63" class="java.lang.String" itemvalue="Application.test_lazy_subscriber_node" />
+      <item index="64" class="java.lang.String" itemvalue="Application.test_lazy_subscriber_nodelet" />
+      <item index="65" class="java.lang.String" itemvalue="Application.test_system_node" />
+      <item index="66" class="java.lang.String" itemvalue="Application.test_system_nodelet" />
+      <item index="67" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="68" class="java.lang.String" itemvalue="Application.gtest_main" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cec8bbf2-b0d8-4230-a8f3-9449dc9ab9ec" name="Default" comment="" />
+      <created>1513766130666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513766130666</updated>
+      <workItem from="1513766131817" duration="4223000" />
+      <workItem from="1513783497828" duration="1623000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5846000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="24" width="1920" height="1056" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2524013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/VelodyneLaserScan.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#113#503#0" expanded="false" />
+            <element signature="e#6109#6211#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="72" lean-forward="false" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="72" lean-forward="false" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VelodyneLaserScan.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#113#503#0" expanded="false" />
+            <element signature="e#6109#6211#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
