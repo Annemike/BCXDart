@@ -7,3 +7,6 @@
 [submodule "catkin_ws/src/sensor_fusion/armadillo"]
 	path = catkin_ws/src/sensor_fusion/armadillo
 	url = https://github.com/Magnusgaertner/armadillo-code.git
+[submodule "catkin_ws/src/computer_vision/darknet_ros"]
+	path = catkin_ws/src/computer_vision/darknet_ros
+	url = https://github.com/leggedrobotics/darknet_ros.git
