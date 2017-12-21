@@ -3,9 +3,8 @@ import os
 import rospy
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
-from std_msgs.msg import String, Float32MultiArray
 from sensor_msgs.msg import Image
-from pytorch_yolo2.obj_detect import detect
+from yolo2_pytorch import detect
 from dart_msgs.msg import cv_cone_list, cv_cone
 
 
@@ -22,7 +21,7 @@ def callback(msg):
         print(e)
 
     cwd = os.getcwd()
-    boxes = detect(cwd + '/src/computer_vision/nn_node/scripts/pytorch_yolo2/cfg/yolo.cfg', cwd + '/src/computer_vision/nn_node/scripts/pytorch_yolo2/yolo.weights', cv2_img)
+    boxes = detect(cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/cfg/yolo-fsd-tiny.cfg', cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/weights/yolo-fsd-tiny_3000.weights', cv2_img)
 
     (height, width, channels) = cv2_img.shape
 
