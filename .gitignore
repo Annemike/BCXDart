@@ -10,3 +10,5 @@ catkin_ws/src/sensor_fusion/simulation2d/\.idea/
 catkin_ws/src/sensor_fusion/cone_sequencer/\.idea/
 
 catkin_ws/src/sensor_fusion/cone_sequencer/cmake-build-debug/
+
+catkin_ws/src/sensor_fusion/camera_lidar_fusion/\.idea/
