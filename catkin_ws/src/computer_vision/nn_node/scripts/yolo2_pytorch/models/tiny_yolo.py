@@ -2,9 +2,9 @@ import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
 from collections import OrderedDict
-from pytorch_yolo2.cfg import *
-from pytorch_yolo2.darknet import MaxPoolStride1
-from pytorch_yolo2.region_loss import RegionLoss
+from yolo2_pytorch.cfg import *
+from yolo2_pytorch.darknet import MaxPoolStride1
+from yolo2_pytorch.region_loss import RegionLoss
 
 class TinyYoloNet(nn.Module):
     def __init__(self):

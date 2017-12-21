@@ -15,11 +15,11 @@ def detect(cfgfile, weightfile, imgfile):
     cwd = os.getcwd()
 
     if m.num_classes == 20:
-        namesfile = cwd + '/src/computer_vision/nn_node/scripts/pytorch_yolo2/data/voc.names'
+        namesfile = cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/data/voc.names'
     elif m.num_classes == 80:
-        namesfile = cwd + '/src/computer_vision/nn_node/scripts/pytorch_yolo2/data/coco.names'
+        namesfile = cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/data/coco.names'
     else:
-        namesfile = cwd + '/src/computer_vision/nn_node/scripts/pytorch_yolo2/data/names'
+        namesfile = cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/data/names'
     
     use_cuda = torch.cuda.is_available()
     if use_cuda:
@@ -47,19 +47,22 @@ def detect_cv2(cfgfile, weightfile, imgfile):
     m.print_network()
     m.load_weights(weightfile)
     print('Loading weights from %s... Done!' % (weightfile))
+    cwd = os.getcwd()
+
 
     if m.num_classes == 20:
-        namesfile = 'data/voc.names'
+        namesfile = cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/data/voc.names'
     elif m.num_classes == 80:
-        namesfile = 'data/coco.names'
+        namesfile = cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/data/coco.names'
     else:
-        namesfile = 'data/names'
+        namesfile = cwd + '/src/computer_vision/nn_node/scripts/yolo2_pytorch/data/names'
     
     use_cuda = torch.cuda.is_available()
     if use_cuda:
         m.cuda()
 
-    img = cv2.imread(imgfile)
+    #img = cv2.imread(imgfile)
+    img = imgfile
     sized = cv2.resize(img, (m.width, m.height))
     sized = cv2.cvtColor(sized, cv2.COLOR_BGR2RGB)
     
@@ -72,6 +75,8 @@ def detect_cv2(cfgfile, weightfile, imgfile):
 
     class_names = load_class_names(namesfile)
     plot_boxes_cv2(img, boxes, savename='predictions.jpg', class_names=class_names)
+
+    return boxes
 
 def detect_skimage(cfgfile, weightfile, imgfile):
     from skimage import io
