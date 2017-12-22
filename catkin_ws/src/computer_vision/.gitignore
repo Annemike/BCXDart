@@ -1,0 +1,4 @@
+.idea/
+nn_node/scripts/yolo2_pytorch/weights/
+Annotation/
+nn_node/scripts/yolo2_pytorch/*pyc
