@@ -33,6 +33,9 @@
  * Author: Mateusz Przybyla
  */
 
+#include <dart_msgs/colors.h>
+#include <dart_msgs/cone.h>
+#include <dart_msgs/cone_list.h>
 #include "obstacle_detector/obstacle_extractor.h"
 #include "obstacle_detector/utilities/figure_fitting.h"
 #include "obstacle_detector/utilities/math_utilities.h"
@@ -116,6 +119,7 @@ bool ObstacleExtractor::updateParams(std_srvs::Empty::Request &req, std_srvs::Em
             }
 
             obstacles_pub_ = nh_.advertise<obstacle_detector::Obstacles>("raw_obstacles", 10);
+            dart_obstacles_pub_ = nh_.advertise<obstacle_detector::Obstacles>("lidar_cones", 10);
         } else {
             // Send empty message
             obstacle_detector::ObstaclesPtr obstacles_msg(new obstacle_detector::Obstacles);
@@ -123,10 +127,16 @@ bool ObstacleExtractor::updateParams(std_srvs::Empty::Request &req, std_srvs::Em
             obstacles_msg->header.stamp = ros::Time::now();
             obstacles_pub_.publish(obstacles_msg);
 
+            dart_msgs::cone_list emptyList;
+            emptyList.header.frame_id = p_frame_id_;
+            emptyList.header.stamp = ros::Time::now();
+            dart_obstacles_pub_.publish(emptyList);
+
             scan_sub_.shutdown();
             pcl_sub_.shutdown();
             pcl2_sub_.shutdown();
             obstacles_pub_.shutdown();
+            dart_obstacles_pub_.shutdown();
         }
     }
 
@@ -453,6 +463,8 @@ void ObstacleExtractor::publishObstacles() {
         obstacles_msg->segments.push_back(segment);
     }
 
+    dart_msgs::cone_list cones;
+
     for (const Circle &c : circles_) {
         if (c.center.x > p_min_x_limit_ && c.center.x < p_max_x_limit_ &&
             c.center.y > p_min_y_limit_ && c.center.y < p_max_y_limit_) {
@@ -466,8 +478,15 @@ void ObstacleExtractor::publishObstacles() {
             circle.true_radius = c.radius - p_radius_enlargement_;
 
             obstacles_msg->circles.push_back(circle);
+
+            dart_msgs::cone cone;
+            cone.position.x = c.center.x;
+            cone.position.y = c.center.y;
+            cone.type = dart_msgs::colors::unknown;
+            cones.cones.push_back(cone);
         }
     }
 
     obstacles_pub_.publish(obstacles_msg);
+    dart_obstacles_pub_.publish(cones);
 }

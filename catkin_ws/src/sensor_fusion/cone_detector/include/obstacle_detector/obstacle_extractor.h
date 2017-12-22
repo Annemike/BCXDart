@@ -99,6 +99,7 @@ namespace obstacle_detector {
         ros::Subscriber pcl_sub_;
         ros::Subscriber pcl2_sub_;
         ros::Publisher obstacles_pub_;
+        ros::Publisher dart_obstacles_pub_;
         ros::ServiceServer params_srv_;
 
         ros::Time stamp_;

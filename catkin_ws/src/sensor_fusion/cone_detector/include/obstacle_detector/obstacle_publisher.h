@@ -71,7 +71,6 @@ namespace obstacle_detector {
         ros::NodeHandle nh_local_;
 
         ros::Publisher obstacle_pub_;
-        ros::Publisher dart_obstacle_pub;
         ros::ServiceServer params_srv_;
         ros::Timer timer_;
 
