@@ -1,0 +1,21 @@
+<launch>
+<include file="$(find obstacle_detector)/launch/detect_on_live_system.launch">
+	<arg name="ring" value="5"/>
+</include>
+
+<include file="$(find obstacle_detector)/launch/detect_on_live_system.launch">
+	<arg name="ring" value="6"/>
+</include>
+
+<include file="$(find obstacle_detector)/launch/detect_on_live_system.launch">
+	<arg name="ring" value="7"/>
+</include>
+<include file="$(find obstacle_detector)/launch/detect_on_live_system.launch">
+	<arg name="ring" value="8"/>
+</include>
+
+<include file="$(find obstacle_detector)/launch/detect_on_live_system.launch">
+	<arg name="ring" value="9"/>
+</include>
+
+</launch>

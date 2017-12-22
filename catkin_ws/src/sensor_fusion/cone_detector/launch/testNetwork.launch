@@ -1,0 +1,4 @@
+<launch>
+<include file="$(find obstacle_detector)/launch/detect_on_gazebo_sim.launch" />
+
+</launch>

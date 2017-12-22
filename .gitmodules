@@ -1,4 +1,0 @@
-[submodule "catkin_ws/src/sensor_fusion/cone_detector"]
-	path = catkin_ws/src/sensor_fusion/cone_detector
-	url = https://github.com/Magnusgaertner/obstacle_detector.git
-

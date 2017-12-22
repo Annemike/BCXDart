@@ -1,0 +1,5 @@
+<launch>
+<include file="$(find obstacle_detector)/launch/detect_on_gazebo_sim.launch" />
+<include file="$(find gazebo_laser_simulation)/launch/start_simulation.launch" />
+
+</launch>
