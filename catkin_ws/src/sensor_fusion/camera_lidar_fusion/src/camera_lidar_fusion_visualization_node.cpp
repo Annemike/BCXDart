@@ -12,7 +12,7 @@
 #include <message_filters/sync_policies/approximate_time.h>
 #include <message_filters/sync_policies/exact_time.h>
 #include <message_filters/subscriber.h>
-#include <opencv-3.3.1/opencv/cv.hpp>
+#include <opencv/cv.hpp>
 #include <dart_msgs/point2d_list.h>
 #include "dart_msgs/cv_cone_list.h"
 #include "dart_msgs/colors.h"

@@ -22,7 +22,7 @@
 
 #include "std_msgs/Int32MultiArray.h"
 
-#include <opencv-3.3.1/opencv/cv.hpp>
+#include <opencv/cv.hpp>
 
 
 using namespace cv;
