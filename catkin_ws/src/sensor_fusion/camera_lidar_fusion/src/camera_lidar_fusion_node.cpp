@@ -45,7 +45,7 @@ static void projectPoint3D(dart_msgs::cone_list::ConstPtr lidarCones){
     }
     std::vector<cv::Point2f> projectedPoints;
 
-    cv::projectPoints(objVector, Mat::zeros(1,3,CV_64F), Mat::zeros(1,3,CV_64F), K,NULL,  projectedPoints);
+    cv::projectPoints(objVector, Mat::zeros(1,3,CV_64F), Mat::zeros(1,3,CV_64F), K,Mat::zeros(1,4,CV_64F),  projectedPoints);
 
     dart_msgs::point2d_list points;
 
