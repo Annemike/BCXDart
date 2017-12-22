@@ -119,7 +119,7 @@ bool ObstacleExtractor::updateParams(std_srvs::Empty::Request &req, std_srvs::Em
             }
 
             obstacles_pub_ = nh_.advertise<obstacle_detector::Obstacles>("raw_obstacles", 10);
-            dart_obstacles_pub_ = nh_.advertise<obstacle_detector::Obstacles>("lidar_cones", 10);
+            dart_obstacles_pub_ = nh_.advertise<dart_msgs::cone_list>("lidar_cones", 10);
         } else {
             // Send empty message
             obstacle_detector::ObstaclesPtr obstacles_msg(new obstacle_detector::Obstacles);

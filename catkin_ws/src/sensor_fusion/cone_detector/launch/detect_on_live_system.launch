@@ -24,7 +24,7 @@
     <!--param name="frame_id"             value="r1/odom"/-->
     <remap from="/raw_obstacles" to="/raw_obstacles$(arg ring)"/>
 <remap from="/scan" to="/scan$(arg ring)"/>
-
+<remap from="/lidar_cones" to="/lidar_cones$(arg ring)"/>
   </node>
 </launch>
 
