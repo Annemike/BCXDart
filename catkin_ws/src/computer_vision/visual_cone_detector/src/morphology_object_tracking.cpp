@@ -87,7 +87,7 @@ int whiteHighH = 255;
 int whiteHighS = 255;
 int whiteHighV = 255;
 
-void readParams(const ros::NodeHandle& n){
+void readParams(ros::NodeHandle& n){
 	blueLowH 	= n.param<int>("blueLowH", 0);
 	blueLowS 	= n.param<int>("blueLowS", 0);
 	blueLowV 	= n.param<int>("blueLowV", 0);
@@ -354,7 +354,7 @@ void MatchingMethod(int, void *) {
                     //cv::Mat depthSumWindowMat =
                     imgDepth(depthSumWindowROI);
                     //double z =
-                    cv::sum(depthSumWindowMat)[0] / cv::countNonZero(depthSumWindowMat);
+                    //cv::sum(depthSumWindowMat)[0] / cv::countNonZero(depthSumWindowMat);
                     double z = imgDepth.at<unsigned short>(y, x);
                     if (!isnan(z) && z < 15000 && z > 1000) {
                         conesRightX.push_back(x * 2);
