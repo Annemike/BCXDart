@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="cone_detector" type="morphology_object_tracking" name="echo2" output="screen" >
+ 		<remap from="/image_raw" to="/stereo/left/image_rect_color"/>
+		<remap from="/image_depth" to="/stereo/depth/image_raw"/>
+	</node>
+</launch>
