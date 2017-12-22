@@ -88,33 +88,33 @@ int whiteHighS = 255;
 int whiteHighV = 255;
 
 void readParams(const ros::NodeHandle& n){
-	blueLowH 	= n.param("blueLowH", 0);
-	blueLowS 	= n.param("blueLowS", 0);
-	blueLowV 	= n.param("blueLowV", 0);
-	blueHighH 	= n.param("blueHighH", 0);
-	blueHighS 	= n.param("blueHighS", 0);
-	blueHighV 	= n.param("blueHighV", 0);
-	             
-	yellowLowH 	= n.param("yellowLowH", 0);
-	yellowLowS 	= n.param("yellowLowS", 0);
-	yellowLowV 	= n.param("yellowLowV", 0);
-	yellowHighH = n.param("yellowHighH", 0);
-	yellowHighS = n.param("yellowHighS", 0);
-	yellowHighV = n.param("yellowHighV", 0);
-	             
-	blackLowH 	= n.param("blackLowH" , 0);
-	blackLowS 	= n.param("blackLowS" , 0);
-	blackLowV 	= n.param("blackLowV" , 0);
-	blackHighH 	= n.param("blackHighH", 0);
-	blackHighS 	= n.param("blackHighS", 0);
-	blackHighV 	= n.param("blackHighV", 0);
-	             
-	whiteLowH 	= n.param("whiteLowH" , 0);
-	whiteLowS 	= n.param("whiteLowS" , 0);
-	whiteLowV 	= n.param("whiteLowV" , 0);
-	whiteHighH 	= n.param("whiteHighH", 0);
-	whiteHighS 	= n.param("whiteHighS", 0);
-	whiteHighV 	= n.param("whiteHighV", 0);
+	blueLowH 	= n.param<int>("blueLowH", 0);
+	blueLowS 	= n.param<int>("blueLowS", 0);
+	blueLowV 	= n.param<int>("blueLowV", 0);
+	blueHighH 	= n.param<int>("blueHighH", 0);
+	blueHighS 	= n.param<int>("blueHighS", 0);
+	blueHighV 	= n.param<int>("blueHighV", 0);
+
+	yellowLowH 	= n.param<int>("yellowLowH", 0);
+	yellowLowS 	= n.param<int>("yellowLowS", 0);
+	yellowLowV 	= n.param<int>("yellowLowV", 0);
+	yellowHighH = n.param<int>("yellowHighH", 0);
+	yellowHighS = n.param<int>("yellowHighS", 0);
+	yellowHighV = n.param<int>("yellowHighV", 0);
+	                  
+	blackLowH 	= n.param<int>("blackLowH" , 0);
+	blackLowS 	= n.param<int>("blackLowS" , 0);
+	blackLowV 	= n.param<int>("blackLowV" , 0);
+	blackHighH 	= n.param<int>("blackHighH", 0);
+	blackHighS 	= n.param<int>("blackHighS", 0);
+	blackHighV 	= n.param<int>("blackHighV", 0);
+	                 
+	whiteLowH 	= n.param<int>("whiteLowH" , 0);
+	whiteLowS 	= n.param<int>("whiteLowS" , 0);
+	whiteLowV 	= n.param<int>("whiteLowV" , 0);
+	whiteHighH 	= n.param<int>("whiteHighH", 0);
+	whiteHighS 	= n.param<int>("whiteHighS", 0);
+	whiteHighV 	= n.param<int>("whiteHighV", 0);
 	
 	}
 
