@@ -29,14 +29,15 @@ ros::Publisher pub;
 cv_bridge::CvImagePtr imgOriginal;
 
 
-void GrabRGB(const sensor_msgs::ImageConstPtr &msgRGB,const dart_msgs::point2d_listConstPtr &msgPoints);
+void GrabRGB(const sensor_msgs::ImageConstPtr &msgRGB);
+void grabPoints(const dart_msgs::point2d_listConstPtr &msgPoints);
 
 int main(int argc, char **argv) {
 
     ros::init(argc, argv, "image_listener");
     ros::NodeHandle nh;
 
-    message_filters::Subscriber<sensor_msgs::Image> rgb_sub(nh, "/left/image_rect_color", 1);
+    /*message_filters::Subscriber<sensor_msgs::Image> rgb_sub(nh, "/left/image_rect_color", 1);
     message_filters::Subscriber<dart_msgs::point2d_list> projected_cones_sub(nh, "/projected_cones", 1);
     typedef message_filters::sync_policies::ApproximateTime<
             sensor_msgs::Image,dart_msgs::point2d_list > sync_pol;
@@ -46,7 +47,9 @@ int main(int argc, char **argv) {
 
     sync.registerCallback(
             boost::bind(&GrabRGB, _1, _2));
-
+*/
+    ros::Subscriber sub1 = nh.subscribe("/left/image_rect_color", 1, GrabRGB);
+    ros::Subscriber sub2 = nh.subscribe("/projected_cones", 1, grabPoints);
 
 
     pub = nh.advertise<sensor_msgs::Image>("lidar_vision_fusion_visual", 100);
@@ -58,15 +61,14 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-
-void GrabRGB(const sensor_msgs::ImageConstPtr &msgRGB,const dart_msgs::point2d_listConstPtr &msgPoints) {
-
-
-   imgOriginal = cv_bridge::toCvCopy(msgRGB,"bgr8");
+void grabPoints(const dart_msgs::point2d_listConstPtr &msgPoints){
     for(const geometry_msgs::Point& point: msgPoints->points){
         cv::circle(imgOriginal->image,cv::Point(point.x, point.y),5,cv::Scalar(0,0,255),-1);
     }
     pub.publish(imgOriginal->toImageMsg());
+}
+void GrabRGB(const sensor_msgs::ImageConstPtr &msgRGB) {
+    imgOriginal = cv_bridge::toCvCopy(msgRGB,"bgr8");
 }
 
 
