@@ -65,15 +65,16 @@ static void projectPoint3D(dart_msgs::cone_list::ConstPtr lidarCones){
 }
 
 static void cameraInfoCallback(sensor_msgs::CameraInfo::ConstPtr info){
-    K = cv::Mat(3, 3, CV_32F, info->K[0]);
+   // K = (Mat_<float>(3, 3) << info->K[0],info->K[1],info->K[2],info->K[3],info->K[4],info->K[5],info->K[6],info->K[7],info->K[8]);
+//std::cout << K;
     camera_info_sub.shutdown();
 }
 
 
 void readParams(ros::NodeHandle &n) {
 
-    K = (Mat_<float>(3, 3) << 699.943, 0.0, 650.156, 0.0, 699.943, 383.336, 0.0, 0.0, 1.0);
-
+    K = (Mat_<float>(3, 3) << 697.996826171875, 0.0, 646.3035888671875, 0.0, 697.996826171875, 368.5094909667969, 0.0, 0.0, 1.0);
+	std::cout << K;
 }
 
 

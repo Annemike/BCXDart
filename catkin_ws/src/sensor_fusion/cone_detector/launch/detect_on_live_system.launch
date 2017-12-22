@@ -9,7 +9,10 @@
     <param name="use_split_and_merge"    value="false"/>
     <param name="circles_from_visibles"  value="true"/>
     <param name="discard_converted_segments" value="true"/>
-    <param name="transform_coordinates"  value="false"/>
+    <param name="transform_coordinates"  value="true"/>
+
+    <param name="fixed_frame_id"    value="map"/>
+    <param name="target_frame_id"   value="ZED_left_camera"/>
 
     <param name="min_group_points"     value="10"/>
 

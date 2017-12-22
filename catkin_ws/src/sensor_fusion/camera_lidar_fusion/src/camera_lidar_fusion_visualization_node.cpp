@@ -62,6 +62,7 @@ int main(int argc, char **argv) {
 }
 
 void grabPoints(const dart_msgs::point2d_listConstPtr &msgPoints){
+cv::circle(imgOriginal->image,cv::Point(0, 0),20,cv::Scalar(0,0,255),-1);
     for(const geometry_msgs::Point& point: msgPoints->points){
         cv::circle(imgOriginal->image,cv::Point(point.x, point.y),5,cv::Scalar(0,0,255),-1);
     }
