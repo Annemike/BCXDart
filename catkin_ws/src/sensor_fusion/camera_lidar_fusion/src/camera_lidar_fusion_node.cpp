@@ -36,6 +36,9 @@ cv::Mat K;
 
 static void projectPoint3D(dart_msgs::cone_list::ConstPtr lidarCones){
 
+    if(lidarCones->cones.size()<=0){
+        return;
+    }
     std::vector<cv::Point3f> objVector;
     for(const dart_msgs::cone& cone : lidarCones->cones){
 
