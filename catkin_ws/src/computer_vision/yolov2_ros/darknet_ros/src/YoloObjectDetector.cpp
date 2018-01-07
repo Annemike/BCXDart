@@ -6,6 +6,8 @@
  *   Institute: ETH Zurich, Robotic Systems Lab
  */
 
+//  test ob bearbeiten funktioniert
+
 // yolo object detector
 #include "darknet_ros/YoloObjectDetector.h"
 
