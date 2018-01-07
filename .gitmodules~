@@ -1,0 +1,12 @@
+[submodule "catkin_ws/src/sensor_fusion"]
+	path = catkin_ws/src/sensor_fusion
+	url = https://github.com/Magnusgaertner/obstacle_detector.git
+[submodule "catkin_ws/src/sensor_fusion/cone_detector"]
+	path = catkin_ws/src/sensor_fusion/cone_detector
+	url = https://github.com/Magnusgaertner/obstacle_detector.git
+[submodule "catkin_ws/src/sensor_fusion/armadillo"]
+	path = catkin_ws/src/sensor_fusion/armadillo
+	url = https://github.com/Magnusgaertner/armadillo-code.git
+[submodule "catkin_ws/src/computer_vision/yolov2_ros/darknet"]
+	path = catkin_ws/src/computer_vision/yolov2_ros/darknet
+	url = https://github.com/pjreddie/darknet.git
