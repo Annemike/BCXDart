@@ -35,6 +35,10 @@
 #include <darknet_ros_msgs/BoundingBox.h>
 #include <darknet_ros_msgs/CheckForObjectsAction.h>
 
+// dartVision Messages
+#include <dart_msgs/cv_cone.h>
+#include <dart_msgs/cv_cone_list.h>
+
 namespace darknet_ros {
 
 //! Bounding box of the detected object.

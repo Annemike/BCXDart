@@ -151,6 +151,13 @@ void YoloObjectDetector::init() {
   std::string detectionImageTopicName;
   int detectionImageQueueSize;
   bool detectionImageLatch;
+  //dartVision Message Variables
+  std::string coneTopicName;
+  int coneQueueSize;
+  bool coneLatch;
+  std::string coneListTopicName;
+  int coneListQueueSize;
+  bool coneListLatch;
 
   nodeHandle_.param("subscribers/camera_reading/topic", cameraTopicName, std::string("/camera/image_raw"));
   nodeHandle_.param("subscribers/camera_reading/queue_size", cameraQueueSize, 1);
@@ -163,11 +170,23 @@ void YoloObjectDetector::init() {
   nodeHandle_.param("publishers/detection_image/topic", detectionImageTopicName, std::string("detection_image"));
   nodeHandle_.param("publishers/detection_image/queue_size", detectionImageQueueSize, 1);
   nodeHandle_.param("publishers/detection_image/latch", detectionImageLatch, true);
+  //dartVision Messages
+  nodeHandle_.param("publishers/cv_cones/topic", coneTopicName, std::string("/darknet_ros/cv_cones"));
+  nodeHandle_.param("publishers/cv_cones/queue_size", coneQueueSize, 1);
+  nodeHandle_.param("publishers/cv_cones/latch", coneLatch, false);
+  nodeHandle_.param("publishers/cv_cones_list/topic",coneListTopicName, std::string("/darknet_ros/cv_cones_list");
+  nodeHandle_.param("publishers/cv_cones_list/queue_size", coneListQueueSize, 1);
+  nodeHandle_.param("publishers/cv_cones_list/latch", coneListLatch, false);
+
 
   imageSubscriber_ = imageTransport_.subscribe(cameraTopicName, cameraQueueSize, &YoloObjectDetector::cameraCallback,this);
   objectPublisher_ = nodeHandle_.advertise<std_msgs::Int8>(objectDetectorTopicName, objectDetectorQueueSize, objectDetectorLatch);
   boundingBoxesPublisher_ = nodeHandle_.advertise<darknet_ros_msgs::BoundingBoxes>(boundingBoxesTopicName, boundingBoxesQueueSize, boundingBoxesLatch);
   detectionImagePublisher_ = nodeHandle_.advertise<sensor_msgs::Image>(detectionImageTopicName, detectionImageQueueSize, detectionImageLatch);
+  //dartVision Messages
+  conePublisher_ = nodeHandle_.advertise<dart_msgs::cv_cone>(coneTopicName,coneQueueSize,coneLatch);
+  coneListPublisher_ = nodeHandle_.advertise<dart_msgs::cv_cone_list>(coneListTopicName,coneListQueueSize, coneListLatch);
+
 
   // Action servers.
   std::string checkForObjectsActionName;
@@ -255,6 +274,8 @@ void YoloObjectDetector::runYolo(cv::Mat &fullFrame, const std_msgs::Header& hea
          }
       }
     }
+
+
 
     // send message that an object has been detected
     std_msgs::Int8 msg;
