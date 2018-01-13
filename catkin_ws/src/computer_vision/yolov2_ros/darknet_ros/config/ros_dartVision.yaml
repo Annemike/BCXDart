@@ -26,16 +26,16 @@ publishers:
     queue_size: 1
     latch: true
 
-  cv_cones:
-    topic: /darknet_ros/cv_cones
-    queue_size: 1
-    latch: false
-
-
-  #cv_cones_list:
-  #  topic: /darknet_ros/cv_cones_list
+  #cv_cones:
+  #  topic: /darknet_ros/cv_cones
   #  queue_size: 1
   #  latch: false
+
+
+  cv_cones_list:
+    topic: /darknet_ros/cv_cones_list
+    queue_size: 1
+    latch: false
 
 
 image_view:

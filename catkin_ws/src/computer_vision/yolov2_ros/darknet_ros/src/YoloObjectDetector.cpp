@@ -11,6 +11,7 @@
 
 // Check for xServer
 #include <X11/Xlib.h>
+#include <darknet_ros/YoloObjectDetector.h>
 
 #ifdef DARKNET_FILE_PATH
 std::string darknetFilePath_ = DARKNET_FILE_PATH;
@@ -174,7 +175,7 @@ void YoloObjectDetector::init() {
   nodeHandle_.param("publishers/cv_cones/topic", coneTopicName, std::string("/darknet_ros/cv_cones"));
   nodeHandle_.param("publishers/cv_cones/queue_size", coneQueueSize, 1);
   nodeHandle_.param("publishers/cv_cones/latch", coneLatch, false);
-  nodeHandle_.param("publishers/cv_cones_list/topic",coneListTopicName, std::string("/darknet_ros/cv_cones_list");
+  nodeHandle_.param("publishers/cv_cones_list/topic",coneListTopicName, std::string("/darknet_ros/cv_cones_list"));
   nodeHandle_.param("publishers/cv_cones_list/queue_size", coneListQueueSize, 1);
   nodeHandle_.param("publishers/cv_cones_list/latch", coneListLatch, false);
 
@@ -184,7 +185,7 @@ void YoloObjectDetector::init() {
   boundingBoxesPublisher_ = nodeHandle_.advertise<darknet_ros_msgs::BoundingBoxes>(boundingBoxesTopicName, boundingBoxesQueueSize, boundingBoxesLatch);
   detectionImagePublisher_ = nodeHandle_.advertise<sensor_msgs::Image>(detectionImageTopicName, detectionImageQueueSize, detectionImageLatch);
   //dartVision Messages
-  conePublisher_ = nodeHandle_.advertise<dart_msgs::cv_cone>(coneTopicName,coneQueueSize,coneLatch);
+  // conePublisher_ = nodeHandle_.advertise<dart_msgs::cv_cone>(coneTopicName,coneQueueSize,coneLatch);
   coneListPublisher_ = nodeHandle_.advertise<dart_msgs::cv_cone_list>(coneListTopicName,coneListQueueSize, coneListLatch);
 
 
@@ -275,6 +276,25 @@ void YoloObjectDetector::runYolo(cv::Mat &fullFrame, const std_msgs::Header& hea
       }
     }
 
+    // Publish cones as dart messages
+
+      dart_msgs::cv_cone_list dartConeList;
+
+      dartConeList.header = header;
+
+      for (int i = 0; i < num; i++) {
+          dart_msgs::cv_cone c;
+          c.x = boxes_[i].x * frameWidth_;
+          c.y = boxes_[i].y * frameHeight_;
+          c.width = boxes_[i].w * frameWidth_;
+          c.height = boxes_[i].h * frameHeight_;
+          c.quality = boxes_[i].prob*100;
+          c.type = boxes_[i].Class ==0? dart_msgs::colors.blue:dart_msgs::colors.yellow;
+          dartConeList.cones.push_back(c);
+
+      }
+
+      coneListPublisher_.publish(dartConeList);
 
 
     // send message that an object has been detected

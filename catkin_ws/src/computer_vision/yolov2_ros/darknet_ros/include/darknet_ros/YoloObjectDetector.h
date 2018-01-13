@@ -38,6 +38,7 @@
 // dartVision Messages
 #include <dart_msgs/cv_cone.h>
 #include <dart_msgs/cv_cone_list.h>
+#include <dart_msgs/colors.h>
 
 namespace darknet_ros {
 
@@ -166,6 +167,10 @@ class YoloObjectDetector
   image_transport::Subscriber imageSubscriber_;
   ros::Publisher objectPublisher_;
   ros::Publisher boundingBoxesPublisher_;
+  //! dartVision ROS Publishers
+  // ros:publisher conePublisher_;
+  ros::Publisher coneListPublisher_;
+
 
   //! Detected objects.
   std::vector< std::vector<RosBox_> > rosBoxes_;
