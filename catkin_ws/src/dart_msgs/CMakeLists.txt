@@ -59,6 +59,7 @@ find_package(catkin REQUIRED COMPONENTS
    lidar_cone.msg
    lidar_cone_list.msg
    local_map.msg
+   colors.msg
  )
 
 ## Generate services in the 'srv' folder
