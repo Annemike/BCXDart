@@ -1,4 +1,6 @@
 .idea/
+yolov2_ros/darknet_ros/cmake-build-debug/
 nn_node/scripts/yolo2_pytorch/weights/
 Annotation/
 nn_node/scripts/yolo2_pytorch/*pyc
+

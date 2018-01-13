@@ -5,3 +5,4 @@
 /catkin_ws/devel_isolated
 /catkin_ws/build_isolated
 /catkin_ws/.idea
+/catkin_ws/src/computer_vision/yolov2_ros/darknet_ros/cmake-build-debug
