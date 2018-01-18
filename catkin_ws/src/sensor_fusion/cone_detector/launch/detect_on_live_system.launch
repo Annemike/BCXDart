@@ -1,27 +1,27 @@
 <!-- Reusable launch file for obstacle detection -->
 <launch>
  <arg name="ring" default="-1" />
-  <node name="obstacle_extractor_$(arg ring)" pkg="obstacle_detector" type="obstacle_extractor_node">
+  <node name="obstacle_extractor_$(arg ring)" pkg="obstacle_detector" type="obstacle_extractor_node" output="screen">
     <param name="active"               value="true"/>
     <param name="use_scan"             value="true"/>
     <param name="use_pcl"              value="false"/>
 
     <param name="use_split_and_merge"    value="false"/>
-    <param name="circles_from_visibles"  value="true"/>
-    <param name="discard_converted_segments" value="true"/>
+    <param name="circles_from_visibles"  value="false"/>
+    <param name="discard_converted_segments" value="false"/>
     <param name="transform_coordinates"  value="false"/>
 
-    <param name="min_group_points"     value="10"/>
+    <param name="min_group_points"     value="4"/>
 
-    <param name="max_group_distance"   value="0.03"/>
+    <param name="max_group_distance"   value="0.1"/>
     <param name="distance_proportion"  value="0.00628"/>
-    <param name="max_split_distance"   value="0.1"/>
+    <param name="max_split_distance"   value="0.01"/>
     <param name="max_merge_separation" value="0.1"/>
     <param name="max_merge_spread"     value="0.1"/>
     <param name="max_circle_radius"    value="0.1"/>
     <param name="radius_enlargement"   value="0"/>
 
-    <!--param name="frame_id"             value="r1/odom"/-->
+    <!--param name="frame_id"             value="/ZED_left_camera"/-->
     <remap from="/raw_obstacles" to="/raw_obstacles$(arg ring)"/>
 <remap from="/scan" to="/scan$(arg ring)"/>
 <remap from="/lidar_cones" to="/lidar_cones$(arg ring)"/>

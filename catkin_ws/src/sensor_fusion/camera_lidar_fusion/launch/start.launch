@@ -1,10 +1,11 @@
 <launch>
-<node name="camera_lidar_fusion" pkg="camera_lidar_fusion" type="camera_lidar_fusion_node">
-	<remap from="/left/camera_info_sub" to="/zed/left/camera_info"/>
+<node name="camera_lidar_fusion" pkg="camera_lidar_fusion" type="camera_lidar_fusion_node" output="screen">
+	<remap from="/left/camera_info_sub" to="/zed/rgb/camera_info"/>
+	<remap from="/lidar_cones" to="/lidar_cones6"/>
 </node>
 <node name="camera_lidar_fusion_visualization" pkg="camera_lidar_fusion" type="camera_lidar_fusion_visualization_node">
 	<remap from="/left/image_rect_color" to="/zed/left/image_rect_color"/>
 </node>
- <node pkg="tf" type="static_transform_publisher" name="zed_to_velodyne_transform" args="0.54 -0.065 -0.84 0 0 0 /ZED_left_camera /velodyne 100" />
+ <node pkg="tf" type="static_transform_publisher" name="zed_to_velodyne_transform" args="0.54 -0.165 -0.84 0 0 0 /ZED_left_camera /velodyne 10" />
 
 </launch>

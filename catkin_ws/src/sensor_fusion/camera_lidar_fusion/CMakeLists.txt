@@ -15,6 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   geometry_msgs
   image_transport
+  image_geometry
+  tf
 )
 
 ## System dependencies are found with CMake's conventions
