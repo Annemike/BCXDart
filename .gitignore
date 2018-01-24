@@ -4,7 +4,8 @@
 /catkin_ws/.catkin_tools
 /catkin_ws/devel_isolated
 /catkin_ws/build_isolated
-
+catkin_ws/src/computer_vision/yolov2_ros
+/Records
 
 cmake-build-debug/
 
